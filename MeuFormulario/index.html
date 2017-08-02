@@ -1,6 +1,91 @@
-<!DOCYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <title>Meu Formulário</title>
+        
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Israel Gomes de Lima"/>
+        <meta name="description" content="Criando um formulário em HTML"/>
+        <meta name="keywords" content="formulários em html, html, input, checkbox, radio"/>
     </head>
+    <body>
+        <form action="TrataFormulario.php" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label for="nome">Nome: </label>
+                    </td>
+                    
+                    <td>
+                        <input type="text" name="nome"/>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="endereco">Endereço: </label>
+                    </td>
+                    
+                    <td>
+                        <input type="text" name="nome"/>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="estado">Estado: </label>
+                    </td>
+                    <td>
+                        <select name="estado">
+                            <option value="pb">Paraiba</option>
+                            <option value="sp">São Paulo</option>
+                            <option value="am">Amazonas</option>
+                            <option value="pa">Pará</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sexo">Sexo: </label>
+                    </td>
+                    
+                    <td>
+                        <input type="radio" name="sexo" value="m"/> Masculino - 
+                        <input type="radio" name="sexo" value="f"/> Feminino
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="materias">Matérias preferidas: </label>
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" name="materias" value="math"/> Metemática - 
+                        <input type="checkbox" name="materias" value="java"/> Java - 
+                        <input type="checkbox" name="materias" value="html"/> HTML - 
+                        <input type="checkbox" name="materias" value="css"/> CSS - 
+                        <input type="checkbox" name="materias" value="php"/> PHP
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="resumo">Resumo de suas habilidades: </label>
+                    </td>
+                    
+                    <td>
+                        <textarea name="resumo">
+                        </textarea>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <input type="submit" value="Enviar"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
 </html>
